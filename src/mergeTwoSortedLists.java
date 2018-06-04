@@ -3,14 +3,17 @@
  * Created by sw on 2018-05-28.
  */
 
-class ListNode{
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x;}
-}
 
 public class mergeTwoSortedLists {
 
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
+    }
 
     static public ListNode solution(ListNode l1, ListNode l2){
         ListNode ans = new ListNode(0);

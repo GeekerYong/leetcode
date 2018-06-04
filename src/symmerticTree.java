@@ -30,7 +30,7 @@ public class symmerticTree {
     static public boolean isSymmetric(TreeNode root) {
         if (root == null) {
             return true;
-        }
+        } //处理初始根节点为null
         return compRoot(root.left, root.right);
     }
 

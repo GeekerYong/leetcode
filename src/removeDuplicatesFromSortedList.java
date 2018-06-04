@@ -11,6 +11,14 @@
  * }
  */
 public class removeDuplicatesFromSortedList {
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
+    }
     static public ListNode solution(ListNode head) {
         if (head == null) {
             return null;
