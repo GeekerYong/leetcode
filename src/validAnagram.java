@@ -6,19 +6,20 @@ import java.util.HashMap;
  */
 public class validAnagram {
     static public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
         HashMap<Character, Boolean> check = new HashMap<>();
         char[] sArr = s.toCharArray();
         char[] tArr = t.toCharArray();
         Arrays.sort(sArr);
         Arrays.sort(tArr);
-        String s_sort = sArr.toString();
-        String t_sort = tArr.toString();
-
-        if (s_sort.equals(t_sort)) {
-            return true;
-        } else {
-            return false;
+        for (int i = 0; i < sArr.length; i++) {
+            if (sArr[i] != tArr[i]) {
+                return false;
+            }
         }
+        return true;
     }
 
     public static void main(String[] args) {
