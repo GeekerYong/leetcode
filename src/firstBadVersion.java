@@ -2,7 +2,9 @@
  * Created by sw on 2018-06-10.
  */
 public class firstBadVersion {
-
+    static public boolean isBadVersion(int num) {
+        return true;
+    }
     static public int firstBadVersion(int n) {
         int l = 1;
         int r = n;
