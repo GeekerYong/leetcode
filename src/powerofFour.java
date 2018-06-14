@@ -21,9 +21,6 @@ public class powerofFour {
         return (num % 4 == 0) && isPowerOfFour2(num / 4);
     }
 
-    static boolean isPowerOfFour3(int num) {
-
-    }
 
     public static void main(String[] args) {
         System.out.println(isPowerOfFour(16));
