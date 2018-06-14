@@ -1,7 +1,7 @@
 /**
  * Created by sw on 2018-06-10.
  */
-public interface moveZeroes {
+public class moveZeroes {
     static public void solution(int[] nums) {
         //划分零区与非零区
         int nz = 0;
