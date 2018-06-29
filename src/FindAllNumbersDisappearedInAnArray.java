@@ -22,7 +22,6 @@ public class FindAllNumbersDisappearedInAnArray {
             }
         }
         return ans;
-
     }
 
     public static void main(String[] args) {
